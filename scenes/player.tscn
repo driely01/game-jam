@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://666ca1562oft"]
+
+[ext_resource type="Texture2D" uid="uid://debbmr05g85ek" path="res://top-down-shooter/Spritesheet/spritesheet_characters.png" id="1_vhe6x"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_xs4y2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hej3d"]
+radius = 15.0
+height = 40.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_xs4y2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -22)
+texture = ExtResource("1_vhe6x")
+region_enabled = true
+region_rect = Rect2(0, 88, 56, 44)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-11, -23)
+shape = SubResource("CapsuleShape2D_hej3d")
