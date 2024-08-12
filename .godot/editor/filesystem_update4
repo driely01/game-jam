@@ -1,9 +1,8 @@
 res://scenes/game.tscn
-res://scripts/Player.gd
 res://scenes/player.tscn
-res://Area2D.gd
-res://scripts/explosion.gd
-res://scenes/explosion.tscn
 res://scenes/weapon.tscn
-res://scripts/weapon.gd
 res://scripts/game.gd
+res://scripts/Player.gd
+res://scenes/zombie.tscn
+res://scripts/zombie.gd
+res://scripts/zombie1.gd

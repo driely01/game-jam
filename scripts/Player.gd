@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var weapon_scene = preload("res://scenes/weapon.tscn")
+
 var throw_distance = 200.0
 var throw_power = 400.0
 

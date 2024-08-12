@@ -1,14 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1723456430
-explosion.gd::GDScript::-1::1723456341::0::1::::<>Area2D<>::
+::res://::1723475915
 icon.svg::CompressedTexture2D::1084320098743744654::1723451262::1723451369::1::::<><>::
 README.md::TextFile::-1::1723451262::0::1::::<><>::
 Timer.gd::GDScript::-1::1723455233::0::1::::<>Timer<>::
-::res://scenes/::1723456430
-game.tscn::PackedScene::5424201269402101760::1723456341::0::1::::<><>::uid://pilb8a8mvtr7::::res://top-down-shooter/Spritesheet/spritesheet_tiles.png<>uid://666ca1562oft::::res://scenes/player.tscn
-player.tscn::PackedScene::2241735703088908669::1723456341::0::1::::<><>::uid://debbmr05g85ek::::res://top-down-shooter/Spritesheet/spritesheet_characters.png<>res://scripts/Player.gd
-::res://scripts/::1723456341
-Player.gd::GDScript::-1::1723456341::0::1::::<>CharacterBody2D<>::
+::res://scenes/::1723481770
+game.tscn::PackedScene::5424201269402101760::1723481770::0::1::::<><>::res://scripts/game.gd<>uid://pilb8a8mvtr7::::res://top-down-shooter/Spritesheet/spritesheet_tiles.png<>uid://666ca1562oft::::res://scenes/player.tscn
+player.tscn::PackedScene::2241735703088908669::1723478789::0::1::::<><>::res://scripts/Player.gd<>uid://ccn3hulggrhqr::::res://top-down-shooter/PNG/Survivor 1/survivor1_stand.png<>uid://box7yipppu6gd::::res://top-down-shooter/PNG/Survivor 1/survivor1_silencer.png
+zombie.tscn::PackedScene::4283885250502350609::1723481801::0::1::::<><>::res://scripts/zombie1.gd<>uid://gge4fvmfbwjb::::res://top-down-shooter/PNG/Zombie 1/zoimbie1_hold.png
+weapon.tscn::PackedScene::7403507477107672135::1723478789::0::1::::<><>::uid://2vhdw201b4pv::::res://top-down-shooter/PNG/weapon_silencer.png<>res://scripts/weapon.gd
+::res://scripts/::1723481754
+Player.gd::GDScript::-1::1723477962::0::1::::<>CharacterBody2D<>::
+game.gd::GDScript::-1::1723481754::0::1::::<>Node2D<>::
+zombie1.gd::GDScript::-1::1723481754::0::1::::<>CharacterBody2D<>::
+weapon.gd::GDScript::-1::1723473974::0::1::::<>RigidBody2D<>::
 ::res://top-down-shooter/::1723451370
 License.txt::TextFile::-1::1723451262::0::1::::<><>::
 Preview.png::CompressedTexture2D::7716792324765276025::1723451262::1723451370::1::::<><>::

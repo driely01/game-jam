@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://cjjr2jumrk3i7"]
+[gd_scene load_steps=8 format=3 uid="uid://cjjr2jumrk3i7"]
 
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_7wpj3"]
 [ext_resource type="Texture2D" uid="uid://pilb8a8mvtr7" path="res://top-down-shooter/Spritesheet/spritesheet_tiles.png" id="1_pwdvp"]
 [ext_resource type="PackedScene" uid="uid://666ca1562oft" path="res://scenes/player.tscn" id="1_rpt2g"]
 
@@ -3201,6 +3202,7 @@ physics_layer_0/collision_layer = 1
 sources/5 = SubResource("TileSetAtlasSource_fbpeb")
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_7wpj3")
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_bw1xe")
@@ -3217,3 +3219,6 @@ layer_0/tile_data = PackedInt32Array(-65538, 1179653, 6, -131069, 1179653, 6, -6
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2, 2)
 position_smoothing_enabled = true
+
+[node name="EnemySpawnTimer" type="Timer" parent="."]
+autostart = true
