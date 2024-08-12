@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://wb2gk2bnxsq2"]
+
+[ext_resource type="Texture2D" uid="uid://cm8b2o76dl8yg" path="res://top-down-shooter/PNG/weapon_gun.png" id="1_3hrde"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ohs2t"]
+radius = 5.0
+
+[node name="Bullet" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.526316, 1)
+texture = ExtResource("1_3hrde")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ohs2t")
