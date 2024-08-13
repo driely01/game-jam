@@ -70,3 +70,8 @@ func shoot():
 		var direction = marker.global_transform.x
 		bullet.set_direction(direction)
 		attack_colldown.start()
+
+
+func _on_area_2d_area_entered(area):
+	self.hide()
+	get_node("../GameOver").game_over()
