@@ -1,0 +1,7 @@
+res://scenes/game.tscn
+res://scenes/player.tscn
+res://scenes/weapon.tscn
+res://scenes/zombie.tscn
+res://scripts/game.gd
+res://scripts/zombie.gd
+res://scripts/Player.gd
