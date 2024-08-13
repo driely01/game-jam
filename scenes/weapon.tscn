@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddqkxltquah6n"]
+
+[ext_resource type="Texture2D" uid="uid://2vhdw201b4pv" path="res://top-down-shooter/PNG/weapon_silencer.png" id="1_aqfef"]
+[ext_resource type="Script" path="res://scripts/weapon.gd" id="1_hfi5k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypvi3"]
+size = Vector2(24, 8)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_hfi5k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_aqfef")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ypvi3")
