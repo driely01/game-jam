@@ -8,10 +8,11 @@ var player: CharacterBody2D
 
 func set_player_reference(p: CharacterBody2D):
 	player = p
-	print("Player reference set:", player)  # Debugging output
 
 func _process(delta):
 	if player:
+		
+		look_at(player.global_position)
 		# Calculate the direction vector to the player
 		var direction = (player.global_position - global_position).normalized()
 		

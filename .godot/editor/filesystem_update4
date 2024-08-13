@@ -1,8 +1,6 @@
 res://scenes/game.tscn
 res://scenes/player.tscn
 res://scenes/weapon.tscn
-res://scripts/game.gd
-res://scripts/Player.gd
 res://scenes/zombie.tscn
+res://scripts/game.gd
 res://scripts/zombie.gd
-res://scripts/zombie1.gd

@@ -9,8 +9,7 @@ var player : CharacterBody2D
 func _ready():
 	$EnemySpawnTimer.timeout.connect(spawn_zombies)
 	$EnemySpawnTimer.start()
-	player = get_node("Game/Player")
-	print("Player node found:", player)
+	player = get_node("Player")
 
 func spawn_zombies():
 	# Generate a random position within the spawn area
