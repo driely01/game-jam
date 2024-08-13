@@ -53,3 +53,20 @@ func _on_weapon_removed(gun_position: Vector2):
 		sprite_gun.visible = true
 	if sprite:
 		sprite.visible = false
+
+@export var gun_bullet :PackedScene
+@onready var marker = $Sprite2D/Marker2D
+@onready var attack_colldown = $AttackColldown
+	
+func _input(event):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_released():
+		shoot()
+
+func shoot():
+	if (attack_colldown.is_stopped()):
+		var bullet = gun_bullet.instantiate()
+		$/root/Game.add_child(bullet)
+		bullet.global_position = marker.global_position
+		var direction = marker.global_transform.x
+		bullet.set_direction(direction)
+		attack_colldown.start()

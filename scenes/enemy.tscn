@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7puxgc68dll"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_ggau4"]
+[ext_resource type="PackedScene" uid="uid://b62fid8isd6uy" path="res://scenes/bullet.tscn" id="2_2khgl"]
+[ext_resource type="Texture2D" uid="uid://debbmr05g85ek" path="res://top-down-shooter/Spritesheet/spritesheet_characters.png" id="3_krxve"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hej3d"]
+radius = 15.0
+height = 40.0
+
+[node name="Enemy" type="CharacterBody2D"]
+position = Vector2(114, 1)
+script = ExtResource("1_ggau4")
+gun_bullet = ExtResource("2_2khgl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(11, 0)
+texture = ExtResource("3_krxve")
+region_enabled = true
+region_rect = Rect2(0, 88, 56, 44)
+
+[node name="Marker2D" type="Marker2D" parent="Sprite2D"]
+position = Vector2(26, 9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_hej3d")
+
+[node name="AttackColldown" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
