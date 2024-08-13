@@ -7,6 +7,7 @@ var throw_power = 400.0
 
 var sprite_gun : Sprite2D
 var sprite : Sprite2D 
+@onready var cooldown = $cooldown_gun
 
 func _ready():
 	sprite_gun = $player_with_gun
@@ -16,8 +17,9 @@ func _process(delta):
 
 	look_at(get_global_mouse_position())
 	
-	if Input.is_action_just_pressed("spawn"):
+	if Input.is_action_just_pressed("spawn") && cooldown.is_stopped():
 		throw_weapon()
+		cooldown.start()
 
 func throw_weapon():
 	var weapon = weapon_scene.instantiate()

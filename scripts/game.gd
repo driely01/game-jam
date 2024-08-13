@@ -2,7 +2,7 @@ extends Node2D
 
 var zombie_scene = preload("res://scenes/zombie.tscn")
 
-var spawn_area = Rect2(Vector2(-100, -177), Vector2(350, -12))
+var spawn_area = Rect2(Vector2(-390, -270), Vector2(900, 790))
 var player : CharacterBody2D
 
 # Called when the node enters the scene tree for the first time.

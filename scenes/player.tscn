@@ -25,3 +25,6 @@ shape = SubResource("CapsuleShape2D_hej3d")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(6, 9)
+
+[node name="cooldown_gun" type="Timer" parent="."]
+one_shot = true
