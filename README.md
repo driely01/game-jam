@@ -1,2 +1,0 @@
-# game-jam
-godot fjiiib
