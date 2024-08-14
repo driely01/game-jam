@@ -41,15 +41,15 @@ texture = ExtResource("3_8rur1")
 [node name="player_with_gun" type="Sprite2D" parent="."]
 texture = ExtResource("3_y6284")
 
+[node name="gun" type="Marker2D" parent="player_with_gun"]
+position = Vector2(6, 9)
+
 [node name="bullet" type="Marker2D" parent="player_with_gun"]
 position = Vector2(27, 9)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-12, 2)
 shape = SubResource("CapsuleShape2D_hej3d")
-
-[node name="gun" type="Marker2D" parent="."]
-position = Vector2(6, 9)
 
 [node name="cooldown_gun" type="Timer" parent="."]
 one_shot = true

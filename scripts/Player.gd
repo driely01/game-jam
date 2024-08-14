@@ -27,10 +27,10 @@ func _process(delta):
 
 func throw_weapon():
 	var weapon = weapon_scene.instantiate()
-	weapon.position = $gun.position
+	weapon.position = $player_with_gun/gun.position
 	
 	# Calculate direction from marker to the mouse position
-	var direction = $gun.global_transform.x
+	var direction = $player_with_gun/gun.global_transform.x
 	
 	# Set the weapon's initial velocity
 	if weapon is RigidBody2D:
@@ -63,7 +63,7 @@ func _input(event):
 		shoot()
 
 func shoot():
-	if (attack_colldown.is_stopped()):
+	if (attack_colldown.is_stopped()) && sprite_gun.visible:
 		var bullet = gun_bullet.instantiate()
 		$/root/Game.add_child(bullet)
 		bullet.global_position = marker.global_position
