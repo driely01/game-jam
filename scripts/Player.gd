@@ -70,6 +70,7 @@ func shoot():
 		var direction = marker.global_transform.x
 		bullet.set_direction(direction)
 		attack_colldown.start()
+		$soundShoot.play()
 
 
 func _on_area_2d_area_entered(area):

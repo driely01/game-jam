@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://1txhhogk5i21"
+path="res://.godot/imported/SHOOT019.mp3-bb4969394f1125443208786b27e74231.mp3str"
+
+[deps]
+
+source_file="res://30 Shooting Sounds by Jalastram/SHOOT019.mp3"
+dest_files=["res://.godot/imported/SHOOT019.mp3-bb4969394f1125443208786b27e74231.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
